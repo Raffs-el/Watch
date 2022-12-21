@@ -10,13 +10,15 @@ $(".fingerprint").click(function(){
     document.getElementById('hours').innerHTML = date.getHours();
     document.getElementById('minutes').innerHTML = date.getMinutes();
 
-    $(".fingerprint").remove();
+    $(".fingerprint").hide();
 })
 
 $("#reset").click(function(){
-    $("#month").remove();
-    $("#day").remove();
-    $("#year").remove();
-    $("#hours").remove();
-    $("#minutes").remove();
+    $("#month").hide();
+    $("#day").hide();
+    $("#year").hide();
+    $("#hours").hide();
+    $("#minutes").hide();
+
+    $(".fingerprint").show();
 })
